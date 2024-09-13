@@ -1,3 +1,68 @@
-body {
-    margin: 0;
+* {
+    box-sizing: border-box;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+  }
+
+.main {
+    width: 550px;
+    height: 550px; 
+    padding-left: 52px;
+    padding-top: 115px;
+    margin: 50px;
+    background-color: rgba(31, 41, 55, 1);
+}
+
+h1 {
+    color: white;
+    font-family: "Karla", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+p {
+    font-family: "Inter", sans-serif;
+    color: rgba(213, 212, 216, 0.8);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    padding: 5px 0 52px 0;
+}
+
+.highlight {
+    color: rgba(74, 223, 134, 1);
+}
+
+button {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    border-radius: 6px;
+    height: 42px;
+    width: 191px;
+    background-color: rgba(16, 185, 129, 1);
+    color: white;
+    border-width: 0;
+}
+
+hr {
+    width: 446px;
+    margin: 35px 0;
+    border-color: rgba(39, 53, 73, 1);
+}
+
+.container {
+    width: 446px; 
+    display: flex;
+    align-content: space-evenly;
+    column-gap: 20px;
+    justify-content: space-between;
+}
+
+.passbox {
+    background-color: rgba(39, 53, 73, 1);
+    width: 211px;
+    height: 39px;
+    border-radius: 6px;
 }
