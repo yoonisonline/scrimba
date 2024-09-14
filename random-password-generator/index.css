@@ -1,8 +1,10 @@
 * {
     box-sizing: border-box;
-      width: 100%;
-      margin: 0;
-      padding: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+
   }
 
 .main {
@@ -22,8 +24,7 @@ h1 {
     line-height: 40px;
 }
 
-p {
-    font-family: "Inter", sans-serif;
+.desc {
     color: rgba(213, 212, 216, 0.8);
     font-weight: 400;
     font-size: 20px;
@@ -33,10 +34,10 @@ p {
 
 .highlight {
     color: rgba(74, 223, 134, 1);
+    font-family: "Karla", sans-serif;
 }
 
 button {
-    font-family: "Inter", sans-serif;
     font-size: 16px;
     border-radius: 6px;
     height: 42px;
@@ -62,7 +63,15 @@ hr {
 
 .passbox {
     background-color: rgba(39, 53, 73, 1);
+    color: rgba(85, 249, 145, 1);
     width: 211px;
     height: 39px;
     border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.passbox > p {
+    font-size: 15px;
+    text-align: center;
 }
