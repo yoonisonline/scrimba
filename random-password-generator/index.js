@@ -8,17 +8,20 @@ function getRandomInt(max) {
     return Math.floor(Math.random() * max);
   }
 
-for (i=0; i < 15; i++) {
-    passwordOne += characters[getRandomInt(91)]
-    passwordTwo += characters[getRandomInt(91)]
-}
-
-const boxOne = document.getElementById("password-one") 
-const boxTwo = document.getElementById("password-two") 
-
 function generate() {
+    for (i=0; i < 15; i++) {
+        passwordOne += characters[getRandomInt(91)]
+        passwordTwo += characters[getRandomInt(91)]
+    }
+    
+    const boxOne = document.getElementById("password-one") 
+    const boxTwo = document.getElementById("password-two") 
+    
     boxOne.innerHTML = `${passwordOne}`
     boxTwo.innerHTML = `${passwordTwo}`
+
+    passwordOne = ""
+    passwordTwo = ""
 }
 
 document.getElementById("pressed").addEventListener("click", generate)
