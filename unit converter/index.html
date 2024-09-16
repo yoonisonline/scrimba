@@ -1,8 +1,35 @@
 <html>
     <head>
         <link rel="stylesheet" href="index.css">
+        <style>
+                        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+        </style>
     </head>
     <body>
-        <script src="index.js"></script>
+        <div class="main">
+
+            <div class="top">
+                <h1>Metric/Imperial Unit Conversion</h1>
+                    <input type="text" id="userInput">
+                    <input type="submit" value="Convert" id="convert">
+            </div>
+
+            <div class="length">
+                <h2>Length (Meter/Feet)</h2>
+                <p><span class="number"></span> meters = <span class="feet"></span> feet | <span class="number"></span> feet = <span class="meters"></span> meters</p>
+            </div>
+
+            <div class="volume">
+                <h2>Volume (Liters/Gallons)</h2>
+                <p><span class="number"></span> liters = <span class="gallons"></span> gallons | <span class="number"></span> gallons = <span class="liters"></span> liters</p>
+            </div>
+
+            <div class="mass">
+                <h2>Mass (Kilograms/Pounds)</h2>
+                <p><span class="number"></span> kilos = <span class="pounds"></span> pounds | <span class="number"></span> pounds = <span class="kilos"></span> kilos</p>
+            </div>
+            <script src="index.js"></script>
+        </div>
     </body>
 </html>
